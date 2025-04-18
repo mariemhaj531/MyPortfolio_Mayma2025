@@ -1,29 +1,35 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/header/Header";
-import Navbar from "./components/navbar/Navbar";
-import Home from "./components/home/Home";
-import About from "./components/about/About";
-import Skills from "./components/skills/Skills";
-import Projects from "./components/projects/Projects";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import Portfolio from './components/Portfolio';
+import Services from './components/Services';
+import Blog from './components/Blog';
+import Contact from './components/Contact';
+import About  from './components/About';
+import Home from './components/Home';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import "./App.css";
+
 function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
-      <Header />
+      <div className="header-container">
       <Navbar />
+      </div>
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/home" element={<HeroSection />} />
             <Route path="/about" element={<About />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/services" element={<Services />}/>
+            <Route path="/portfolio" element={<Portfolio />} />   
+            <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
-        <Footer />
       </div>
     </Router>
   );
