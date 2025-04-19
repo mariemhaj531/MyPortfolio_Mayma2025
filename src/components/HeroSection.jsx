@@ -1,34 +1,66 @@
-import React from 'react';
+import React from "react";
+import "../css/HeroSection.css";
 
 const HeroSection = () => {
-	return (
-        <section id="home" className="dark_bg">
-        <div id="particles-js"></div>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 col-md-6">
-              <div className="banner_content">
-                <h3>Hi There,</h3>
-                <h1 className="cd-headline clip">
-                  <span className="fw_600">I Am</span>
-                  <span className="cd-words-wrapper">
-                    <b className="is-visible fw_600">Mariem Hajji</b>
-                    <b className="fw_600">Web Developer</b>
-                  </span>
-                </h1>
-                <p>I'm a Web Developer with extensive experience...</p>
-                <a href="#" className="btn btn-secondary banner_btn">Hire Me</a>
+  return (
+    <section id="home" className="hero-section">
+      <div id="particles-js"></div>
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-lg-6 col-md-12">
+            <div className="banner-content">
+              <h3>
+                Hello, I'm <span className="highlight">Mariem Hajji</span>
+              </h3>
+              <h1>
+                <b className="fw-bold ">Web Developer</b>
+              </h1>
+              <p>
+                I'm a passionate Web Developer with extensive experience in
+                building full-stack applications using modern technologies.
+              </p>
+              <div className="banner-socials mb-3">
+                <a
+                  href="https://www.linkedin.com/in/mariemhajji
+
+"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://github.com/mariemhaj531"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon"
+                >
+                  <i className="fab fa-github"></i>
+                </a>
+                <a href="mailto:mariemhajji099@gmail.com" className="social-icon">
+                  <i className="fas fa-envelope"></i>
+                </a>
               </div>
-            </div>
-            <div className="col-lg-6 col-md-6">
-              <div className="banner-images">
-                <img src="/assets/" alt="me" />
+              <div className="banner-buttons">
+                <a  href="/Mariem.pdf" className="btn custom-btn">
+                  Download CV
+                </a>
+                <a href="/contact" className="btn custom-btn">
+                Contact Me
+                </a>
               </div>
             </div>
           </div>
+          <div className="col-lg-6 col-md-12 text-center">
+            <div className="banner-image">
+              <img src="../assets/perso.jpeg" alt="Mariem Hajji" />
+            </div>
+          </div>
         </div>
-      </section>
-	);
+      </div>
+    </section>
+  );
 };
 
 export default HeroSection;

@@ -5,8 +5,8 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow">
       <div className="container mt-4">
-        <Link className="navbar-brand fw-bold" to="/">Mayma</Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <Link className="navbar-brand fw-bold" to="/">Mayma</Link>
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
