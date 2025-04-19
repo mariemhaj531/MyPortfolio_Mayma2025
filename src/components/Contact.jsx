@@ -1,16 +1,76 @@
-import React from 'react'
+import React from "react";
+import "../css/Contact.css";
 
 const Contact = () => {
   return (
-<div className="p-6">
-  <h2 className="text-center">Contact Us</h2>
-  <form className="flex flex-col gap-4 max-w-md text-center">
-    <input type="text" placeholder="Name" className="border p-2" />
-    <input type="email" placeholder="Email" className="border p-2" />
-    <textarea placeholder="Message" className="border p-2" rows="5"></textarea>
-    <button className="bg-blue-500 text-black p-2">Send</button>
-  </form>
-</div>  )
-}
+    <div className="container py-5">
+      <div className="row justify-content-center">
+        <div className="col-lg-8 col-md-10">
+          <div className="form-container">
+            <div className="left-container">
+              <div className="left-inner-container">
+                <h2>Let's Chat</h2>
+                <p>
+                  Whether you have a question, want to start a project, or simply
+                  want to connect, feel free to send me a message.
+                </p>
+              </div>
+            </div>
+            <div className="right-container">
+              <div className="right-inner-container">
+                <form action="#">
+                  <h2 className="lg-view">Contact</h2>
+                  <h2 className="sm-view">Let's Chat</h2>
 
-export default Contact
+                  {/* Social Icons */}
+                  <div className="social-container mb-4">
+                    <a href="https://www.linkedin.com/in/mariemhajji" className="social" target="_blank" rel="noopener noreferrer">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/mariemhaj531" className="social" target="_blank" rel="noopener noreferrer">
+                      <i className="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:mariemhajji099@gmail.com" className="social">
+                      <i className="fas fa-envelope"></i>
+                    </a>
+                  </div>
+
+                  {/* Form Inputs */}
+                  <input
+                    type="text"
+                    className="form-control mb-3"
+                    placeholder="Name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    className="form-control mb-3"
+                    placeholder="Email"
+                    required
+                  />
+                  <input
+                    type="text"
+                    className="form-control mb-3"
+                    placeholder="Subject"
+                  />
+                  <textarea
+                    className="form-control mb-3"
+                    rows="4"
+                    placeholder="Message"
+                  ></textarea>
+                  
+                  {/* Submit Button */}
+                  <button type="submit" className="btn btn-primary w-100">
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;

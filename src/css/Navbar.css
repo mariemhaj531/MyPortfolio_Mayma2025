@@ -1,10 +1,11 @@
 .navbar {
-    background: linear-gradient(90deg, #ff8a00, #e52e71); 
-    transition: background-color 0.3s ease-in-out;
-  }
+  background: linear-gradient(90deg, #0ca8e6, #0ca8e6);
+  transition: background-color 0.3s ease-in-out;
   
+
+  }
   .navbar-brand {
-    color: #fff !important;
+    color: white !important;
     font-size: 1.8rem;
     animation: fadeInDown 1s ease-in-out;
   }
