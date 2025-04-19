@@ -1,72 +1,73 @@
 .skills-section {
+    /* background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364); */
+    color: black;
     padding: 60px 20px;
-   
-    font-family: 'Segoe UI', sans-serif;
     text-align: center;
   }
   
   .skills-title {
-    font-size: 2.8rem;
+    font-size: 36px;
     font-weight: bold;
-    color: #222;
     margin-bottom: 10px;
+    color: black;
   }
   
   .skills-subtitle {
-    font-size: 1.1rem;
-    color: #666;
+    font-size: 18px;
     margin-bottom: 40px;
+    color: black;
   }
   
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
   }
   
   .skills-card {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
   }
   
   .skills-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   }
   
   .skills-card h3 {
-    font-size: 1.5rem;
-    color: #007bff;
+    font-size: 24px;
     margin-bottom: 15px;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 8px;
+    color: #0ca8e6;
   }
   
   .skills-card ul {
     list-style: none;
     padding: 0;
-    margin: 0;
   }
   
-  .skills-card li {
-    font-size: 1rem;
-    color: #444;
-    padding: 6px 0;
+  .skills-card ul li {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 16px;
     position: relative;
     padding-left: 20px;
   }
   
-  .skills-card li::before {
+  .skills-card ul li::before {
     content: "✓";
     position: absolute;
     left: 0;
-    color: #28a745;
+    color: #87CEEB ;
     font-weight: bold;
   }
-  
+.skill-icon {
+    color: #87CEEB ;
+    margin-right: 10px;
+    font-size: 20px;
+    vertical-align: middle;
+  }
