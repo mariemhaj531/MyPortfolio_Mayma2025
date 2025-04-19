@@ -6,7 +6,7 @@ Bienvenue dans mon projet **Portfolio Mayma**, une application moderne et respon
 ## 🛠️ Technologies utilisées
 
 - **Frontend** : [ReactJS]
-- **Backend** : [Node.js] – Gestion des soumissions du formulaire de contact
+- **Backend** : [PHP] – Gestion des soumissions du formulaire de contact
 - **Expérience utilisateur (UI)** : jQuery (animations, interactions dynamiques)
 - **Styling** : Bootstrap
 
