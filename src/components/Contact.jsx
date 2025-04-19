@@ -60,7 +60,7 @@ const Contact = () => {
                   ></textarea>
                   
                   {/* Submit Button */}
-                  <button type="submit" className="btn btn-primary w-100">
+                  <button type="submit" className=" w-100">
                     Submit
                   </button>
                 </form>
