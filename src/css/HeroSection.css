@@ -42,7 +42,7 @@
     color: #0ca8e6;
     font-size: 1.5rem;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px #0ca8e6;;
+    box-shadow: 0 4px 10px #0ca8e6;
     text-decoration: none;
   }
   
@@ -65,7 +65,7 @@
   }
   
   .banner-buttons .custom-btn:hover {
-    background-color:  #87CEEB;
+    background-color:  #87CEEB     ;
     transform: translateY(-2px);
   }
   
@@ -74,4 +74,10 @@
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   }
-  
+
+/* .banner-content h3,
+.banner-content p,
+
+.banner-image img {
+  display: none;
+} */
