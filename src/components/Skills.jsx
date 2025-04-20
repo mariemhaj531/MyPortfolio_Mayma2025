@@ -59,7 +59,7 @@ const Skills = () => {
   return (
     <div className="skills-section">
       <h2 className="skills-title">Skills</h2>
-      <p className="skills-subtitle">Voici un aperçu de mes compétences techniques et professionnelles :</p>
+      <p className="skills-subtitle">Voici un aperçu de mes compétences techniques et professionnelles </p>
      
       <div className="skills-grid">
         {skillsData.map((module, index) => (

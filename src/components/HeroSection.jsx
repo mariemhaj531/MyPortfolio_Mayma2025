@@ -55,7 +55,7 @@ const HeroSection = () => {
               </p>
               <div className="banner-socials mb-3">
                 <a
-                  href="https://www.linkedin.com/in/mariemhajji
+                href="https://www.linkedin.com/in/mariemhajji
 
 "
                   target="_blank"

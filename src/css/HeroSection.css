@@ -1,104 +1,142 @@
 .hero-section {
-    color: black;
-    padding: 100px 0;
-    min-height: 100vh;
-    position: relative;
-    overflow: hidden;
-  }
-  .banner-image{
-    animation: fadeIn 1.2s ease-in-out;
-    position: relative;
-  }
-  .banner-image img {
-    width: 280px;
-    height: 280px;
-    border-radius: 70%;
-    /* border: 1px solid #0ca8e6; */
-    box-shadow: 0 0 25px rgba(0, 168, 230, 0.4);
-    object-fit: cover;
-    transition: all 0.4s ease;
-    /* box-shadow:
-    0 10px 20px rgba(0, 168, 230, 0.2),
-    0 6px 6px rgba(0, 0, 0, 0.1),
-    0 0 0 4px rgba(12, 168, 230, 0.3); */
-  } 
-  .banner-image img:hover {
-    transform: rotate(2deg) scale(1.07);
-    }
+  color: black;
+  padding: 100px 0;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
 
-
-  .banner-content h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .banner-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .banner-content p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-  }
-  
-  .highlight {
-    color: #87CEEB;
-  }
-  .banner-socials {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: white;
-    color: #0ca8e6;
-    font-size: 1.5rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px #0ca8e6;
-    text-decoration: none;
-  }
-  
-  .social-icon:hover {
-    background-color: #0ca8e6;
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px #0ca8e6;
-  }
-  
-
-  .banner-buttons .custom-btn {
-    background-color:#0ca8e6;
-    color: white;
-    margin-right: 1rem;
-    padding: 0.75rem 1.5rem;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .banner-buttons .custom-btn:hover {
-    background-color:  #87CEEB     ;
-    transform: translateY(-2px);
-  }
-  
-  .banner-image img {
-    max-width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  }
-
-/* .banner-content h3,
-.banner-content p,
+.banner-image {
+  animation: fadeIn 1.2s ease-in-out;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
 
 .banner-image img {
-  display: none;
-} */
+  width: 280px;
+  height: 280px;
+  border-radius: 70%;
+  box-shadow: 0 0 25px rgba(0, 168, 230, 0.4);
+  object-fit: cover;
+  transition: all 0.4s ease;
+  max-width: 100%;
+}
+
+.banner-image img:hover {
+  transform: rotate(2deg) scale(1.07);
+}
+
+.banner-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: #87CEEB;
+}
+
+.banner-socials {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  /* justify-content: center; */
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: white;
+  color: #0ca8e6;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px #0ca8e6;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #0ca8e6;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px #0ca8e6;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 1rem;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+}
+
+.banner-buttons .custom-btn {
+  background-color: #0ca8e6;
+  color: white;
+  margin-right: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.banner-buttons .custom-btn:hover {
+  background-color: #87CEEB;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .banner-content h3 {
+    font-size: 1.6rem;
+  }
+
+  .banner-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-buttons .custom-btn {
+    margin: 0.5rem 0;
+    width: 70%;
+  }
+
+  /* l'image conserve la même taille ici, pas de redimension */
+  .banner-image {
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  .banner-socials {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+}
