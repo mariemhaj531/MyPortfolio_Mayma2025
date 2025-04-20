@@ -12,7 +12,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import "./App.css";
-
+import NotFound from "./components/NotFound";
 function App() {
   return (
     <Router>
@@ -29,6 +29,7 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <footer
             className="text-center py-3 text-white mt-auto"
