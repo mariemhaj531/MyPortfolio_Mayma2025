@@ -5,7 +5,28 @@
     position: relative;
     overflow: hidden;
   }
-  
+  .banner-image{
+    animation: fadeIn 1.2s ease-in-out;
+    position: relative;
+  }
+  .banner-image img {
+    width: 280px;
+    height: 280px;
+    border-radius: 70%;
+    /* border: 1px solid #0ca8e6; */
+    box-shadow: 0 0 25px rgba(0, 168, 230, 0.4);
+    object-fit: cover;
+    transition: all 0.4s ease;
+    /* box-shadow:
+    0 10px 20px rgba(0, 168, 230, 0.2),
+    0 6px 6px rgba(0, 0, 0, 0.1),
+    0 0 0 4px rgba(12, 168, 230, 0.3); */
+  } 
+  .banner-image img:hover {
+    transform: rotate(2deg) scale(1.07);
+    }
+
+
   .banner-content h3 {
     font-size: 2rem;
     margin-bottom: 1rem;

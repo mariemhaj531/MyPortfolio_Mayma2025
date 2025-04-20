@@ -1,7 +1,8 @@
 import React ,{useEffect} from "react";
 import $ from "jquery";
 import "../css/HeroSection.css";
-import persoImg from '../assets/perso.jpg';
+// import persoImg from '../assets/perso.jpg';
+import perso from '../assets/perso.png';
 
 const HeroSection = () => {
   useEffect(() => {
@@ -37,7 +38,7 @@ const HeroSection = () => {
   }, []);
   return (
     <section id="home" className="hero-section">
-      <div id="particles-js"></div>
+      {/* <div id="particles-js"></div> */}
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-12">
@@ -87,7 +88,7 @@ const HeroSection = () => {
           </div>
           <div className="col-lg-6 col-md-12 text-center">
             <div className="banner-image">
-              <img src={persoImg} alt="Mariem Hajji" />
+              <img src={perso} alt="Mariem Hajji" />
             </div>
           </div>
         </div>

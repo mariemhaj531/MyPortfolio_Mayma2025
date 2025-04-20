@@ -69,7 +69,7 @@
     text-decoration: underline;
   }
   .service-card {
-    background-color: #c8ebf8;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
     padding: 2rem 1rem;
     margin: 1rem 0;
     

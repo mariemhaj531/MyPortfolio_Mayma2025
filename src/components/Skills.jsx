@@ -44,7 +44,6 @@ const Skills = () => {
         { name: "Git", icon: <FaGitAlt /> },
         { name: "Docker", icon: <FaDocker /> },
         { name: "CI/CD", icon: <SiRedux /> },
-        { name: "Linux", icon: <FaLinux /> }
       ]
     },
     {
@@ -52,7 +51,7 @@ const Skills = () => {
       items: [
         { name: "MongoDB", icon: <SiMongodb /> },
         { name: "MySQL", icon: <SiMysql /> },
-        { name: "Firebase", icon: <SiFirebase /> }
+
       ]
     }
   ];

@@ -6,7 +6,9 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   min-height: 450px;
 }
-
+.contact-title span {
+ color:#00bcd4;
+}
 .left-container {
   background-color: #00bcd4;
   color: white;
@@ -101,3 +103,19 @@ button:hover {
     display: none;
   }
 }
+
+/* .contact-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0ca8e6;
+  position: relative;
+}
+
+.contact-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #0ca8e6;
+  margin: 10px auto 0;
+  border-radius: 2px; */
