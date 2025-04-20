@@ -1,5 +1,5 @@
 import React from "react";
-import persoImg from "../assets/perso.jpg";
+import perso from "../assets/perso.png";
 import "../css/About.css";
 
 const About = () => {
@@ -25,7 +25,7 @@ const About = () => {
           <button className="read-more">Read More</button>
         </div>
         <div className="about-image">
-          <img src={persoImg} alt="Profile" />
+          <img src={perso} alt="Profile" />
         </div>
       </section>
     </div>
