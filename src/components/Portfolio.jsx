@@ -1,6 +1,8 @@
 import React from "react";
 import "../css/Portfolio.css";
-// import proj1 from "../assets/proj1.png";
+import proj1 from "../assets/proj1.png";
+import maymaBlog from "../assets/maymaBlog.png";
+import mama from "../assets/mama.jpg";
 const Portfolio = () => {
   return (
     <div className="portfolio">
@@ -9,8 +11,9 @@ const Portfolio = () => {
         <div className="row mt-4">
           <div className="col-md-4 mb-4 d-flex">
             <div className="card-project text-center w-100">
-              {/* <img src="chemin/vers/image.jpg" alt="MaymaBlog" /> */}
-              <h3>MaymaBlog</h3>
+              {/* Design image de telle façon cv pour width et height */}
+            <img src={maymaBlog} alt="MaymaBlog" className="width:50px" />
+            <h3>MaymaBlog</h3>
               <p></p>
               <p>
                 <strong>Technologies:</strong> ReactJS
@@ -23,9 +26,9 @@ const Portfolio = () => {
 
           <div className="col-md-4 mb-4 d-flex">
             <div className="card-project text-center w-100">
-              {/* <img src={proj1} alt="MaymaBlog" /> */}
+              <img src={proj1} alt="MaymaPortfolio" />
               <h3>MaymaPortfolio</h3>
-              <p> <strong>Mayma</strong> is a personal project, built from scratch, designed to showcase my skills, services, and projects as a developer.</p>
+              {/* <p> <strong>Mayma</strong> is a personal project, built from scratch, designed to showcase my skills, services, and projects as a developer.</p> */}
               <p>
                <strong>Technologies:</strong> ReactJs,Laravel,MySQL,JQuery
               </p>
@@ -37,7 +40,7 @@ const Portfolio = () => {
 
           <div className="col-md-4 mb-4 d-flex">
             <div className="card-project text-center w-100">
-              {/* <img src="chemin/vers/image.jpg" alt="MaymaBlog" /> */}
+              <img src={mama} alt="Mama" />
               <h3>Ma&Ma</h3>
               <p></p>
               <p>
