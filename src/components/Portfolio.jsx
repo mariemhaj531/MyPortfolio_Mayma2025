@@ -1,7 +1,6 @@
 import React from "react";
 import "../css/Portfolio.css";
-
-import proj1 from "../assets/proj1.png";
+import proj1 from '../assets/proj1.png';
 import maymaBlog from "../assets/maymaBlog.png";
 import mama from "../assets/mama.jpg";
 const Portfolio = () => {
