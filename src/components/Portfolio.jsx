@@ -12,7 +12,7 @@ const Portfolio = () => {
           <div className="col-md-4 mb-4 d-flex">
             <div className="card-project text-center w-100">
               {/* Design image de telle façon cv pour width et height */}
-              <img src={maymaBlog} alt="MaymaBlog" className="width:50px" />
+              <img src={maymaBlog} alt="MaymaBlog" />
               <h3>MaymaBlog</h3>
               <p></p>
               <p>
