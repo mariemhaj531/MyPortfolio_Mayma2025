@@ -1,58 +1,79 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "../css/Portfolio.css";
-import proj from '../assets/proj.png';
+import proj from "../assets/proj.png";
 import mayma from "../assets/mayma.png";
 import mama from "../assets/mama.jpg";
+
 const Portfolio = () => {
+  const settings = {
+    // dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, 
+    slidesToScroll: 1,
+     responsive: [
+      {
+         breakpoint: 992,
+         settings: {
+          slidesToShow: 2,
+         },
+       },
+       {
+         breakpoint: 768,
+         settings: {
+           slidesToShow: 1,
+         },
+       },
+     ],
+   };
+
+  const projects = [
+    {
+      img: mayma,
+      title: "MaymaBlog",
+      tech: "ReactJS",
+      tools: "VSCode, GitHub, Figma, EmailJS",
+    },
+    {
+      img: proj,
+      title: "MaymaPortfolio",
+      tech: "ReactJS,Laravel,MySQL,JQuery",
+      tools: "VSCode, GitHub, ESLint",
+    },
+    {
+      img: mama,
+      title: "Ma&Ma",
+      tech: "ReactJS, Node.js, MongoDB",
+      tools: "VSCode, Figma, Postman",
+    },
+    {
+      img: proj,
+      title: "Drivey",
+      tech: "ReactJS, Laravel, MySQL",
+      tools: "VSCode, GitHub, ESLint,Postman",
+    },
+  
+  ];
+
   return (
     <div className="portfolio">
       <section className="container mt-5">
         <h1 className="text-center">My Projects</h1>
-        <div className="row mt-4">
-          <div className="col-md-4 mb-4 d-flex">
-            <div className="card-project text-center w-100">
-              {/* Design image de telle façon cv pour width et height */}
-              <img src={mayma} alt="MaymaBlog" />
-              <h3>MaymaBlog</h3>
-              <p></p>
-              <p>
-                <strong>Technologies:</strong> ReactJS
-              </p>
-              <p>
-                <strong>Tools:</strong> VSCode,GitHub,Figma,EmailJS
-              </p>
+        <Slider  {...settings} className="mt-4">
+          {projects.map((project, index) => (
+            <div className="card-project text-center" key={index}>
+              <img src={project.img} alt={project.title} className="project-img" />
+              <h3>{project.title}</h3>
+              <div className="tech-tools">
+              <p><strong>Technologies:</strong> {project.tech}</p>
+              <p><strong>Tools:</strong> {project.tools}</p>
+              </div>
             </div>
-          </div>
-
-          <div className="col-md-4 mb-4 d-flex">
-            <div className="card-project text-center w-100">
-              <img src={proj} alt="MaymaPortfolio" />
-              <h3>MaymaPortfolio</h3>
-              {/* <p> <strong>Mayma</strong> is a personal project, built from scratch, designed to showcase my skills, services, and projects as a developer.</p> */}
-              <p>
-                <strong>Technologies:</strong> ReactJs,Laravel,MySQL,JQuery
-              </p>
-              <p>
-                <strong>Tools:</strong> VSCode,GitHub,ESLint
-              </p>
-            </div>
-          </div>
-
-          <div className="col-md-4 mb-4 d-flex">
-            <div className="card-project text-center w-100">
-              <img src={mama} alt="Mama" />
-              <h3>Ma&Ma</h3>
-              <p></p>
-              <p>
-                <strong>Technologies:</strong>ReactJs,Node.js,MongoDB
-              </p>
-              <p>
-                <strong>Tools:</strong>VSCode,Figma,Postman
-              </p>
-            </div>
-          </div>
-        </div>
-        <div></div>
+          ))}
+        </Slider>
       </section>
     </div>
   );
