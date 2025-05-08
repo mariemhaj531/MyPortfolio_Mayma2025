@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Portfolio.css";
-import proj1 from "../assets/proj1.png";
+import proj1 from '../assets/proj1.png';
 import maymaBlog from "../assets/maymaBlog.png";
 import mama from "../assets/mama.jpg";
 const Portfolio = () => {
@@ -19,7 +19,7 @@ const Portfolio = () => {
                 <strong>Technologies:</strong> ReactJS
               </p>
               <p>
-                <strong>Outils:</strong> VSCode,GitHub,Figma,EmailJS
+                <strong>Tools:</strong> VSCode,GitHub,Figma,EmailJS
               </p>
             </div>
           </div>
@@ -33,7 +33,7 @@ const Portfolio = () => {
                <strong>Technologies:</strong> ReactJs,Laravel,MySQL,JQuery
               </p>
               <p>
-                <strong>Outils:</strong> VSCode,GitHub,ESLint
+                <strong>Tools:</strong> VSCode,GitHub,ESLint
               </p>
             </div>
           </div>
@@ -47,11 +47,12 @@ const Portfolio = () => {
                 <strong>Technologies:</strong>ReactJs,Node.js,MongoDB
               </p>
               <p>
-                <strong>Outils:</strong>VSCode,Figma,Postman
+                <strong>Tools:</strong>VSCode,Figma,Postman
               </p>
             </div>
           </div>
         </div>
+          
       </section>
     </div>
   );
