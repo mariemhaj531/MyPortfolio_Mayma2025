@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/Portfolio.css";
-import proj1 from '../assets/proj1.png';
+
+import proj1 from "../assets/proj1.png";
 import maymaBlog from "../assets/maymaBlog.png";
 import mama from "../assets/mama.jpg";
 const Portfolio = () => {
@@ -12,8 +13,8 @@ const Portfolio = () => {
           <div className="col-md-4 mb-4 d-flex">
             <div className="card-project text-center w-100">
               {/* Design image de telle façon cv pour width et height */}
-            <img src={maymaBlog} alt="MaymaBlog" className="width:50px" />
-            <h3>MaymaBlog</h3>
+              <img src={maymaBlog} alt="MaymaBlog" className="width:50px" />
+              <h3>MaymaBlog</h3>
               <p></p>
               <p>
                 <strong>Technologies:</strong> ReactJS
@@ -30,7 +31,7 @@ const Portfolio = () => {
               <h3>MaymaPortfolio</h3>
               {/* <p> <strong>Mayma</strong> is a personal project, built from scratch, designed to showcase my skills, services, and projects as a developer.</p> */}
               <p>
-               <strong>Technologies:</strong> ReactJs,Laravel,MySQL,JQuery
+                <strong>Technologies:</strong> ReactJs,Laravel,MySQL,JQuery
               </p>
               <p>
                 <strong>Tools:</strong> VSCode,GitHub,ESLint
@@ -52,7 +53,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-          
+        <div></div>
       </section>
     </div>
   );
