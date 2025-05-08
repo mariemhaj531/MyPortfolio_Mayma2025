@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/Portfolio.css";
-import proj1 from "../assets/proj1.png";
-import maymaBlog from "../assets/maymaBlog.png";
+import proj from '../assets/proj.png';
+import mayma from "../assets/mayma.png";
 import mama from "../assets/mama.jpg";
 const Portfolio = () => {
   return (
@@ -12,28 +12,28 @@ const Portfolio = () => {
           <div className="col-md-4 mb-4 d-flex">
             <div className="card-project text-center w-100">
               {/* Design image de telle façon cv pour width et height */}
-            <img src={maymaBlog} alt="MaymaBlog" className="width:50px" />
-            <h3>MaymaBlog</h3>
+              <img src={mayma} alt="MaymaBlog" />
+              <h3>MaymaBlog</h3>
               <p></p>
               <p>
                 <strong>Technologies:</strong> ReactJS
               </p>
               <p>
-                <strong>Outils:</strong> VSCode,GitHub,Figma,EmailJS
+                <strong>Tools:</strong> VSCode,GitHub,Figma,EmailJS
               </p>
             </div>
           </div>
 
           <div className="col-md-4 mb-4 d-flex">
             <div className="card-project text-center w-100">
-              <img src={proj1} alt="MaymaPortfolio" />
+              <img src={proj} alt="MaymaPortfolio" />
               <h3>MaymaPortfolio</h3>
               {/* <p> <strong>Mayma</strong> is a personal project, built from scratch, designed to showcase my skills, services, and projects as a developer.</p> */}
               <p>
-               <strong>Technologies:</strong> ReactJs,Laravel,MySQL,JQuery
+                <strong>Technologies:</strong> ReactJs,Laravel,MySQL,JQuery
               </p>
               <p>
-                <strong>Outils:</strong> VSCode,GitHub,ESLint
+                <strong>Tools:</strong> VSCode,GitHub,ESLint
               </p>
             </div>
           </div>
@@ -47,11 +47,12 @@ const Portfolio = () => {
                 <strong>Technologies:</strong>ReactJs,Node.js,MongoDB
               </p>
               <p>
-                <strong>Outils:</strong>VSCode,Figma,Postman
+                <strong>Tools:</strong>VSCode,Figma,Postman
               </p>
             </div>
           </div>
         </div>
+        <div></div>
       </section>
     </div>
   );
