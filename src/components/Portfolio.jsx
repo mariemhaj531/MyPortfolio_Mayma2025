@@ -55,12 +55,7 @@ const Portfolio = () => {
       tech: "ReactJS, Laravel, MySQL",
       tools: "VSCode, GitHub, ESLint,Postman",
     },
-    {
-      img: proj,
-      title: "Drivey",
-      tech: "ReactJS, Laravel, MySQL",
-      tools: "VSCode, GitHub, ESLint,Postman",
-    },
+  
   ];
 
   return (
