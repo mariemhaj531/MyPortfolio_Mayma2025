@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/Portfolio.css";
 import proj from '../assets/proj.png';
-import maymaBlog from "../assets/maymaBlog.png";
+import mayma from "../assets/mayma.png";
 import mama from "../assets/mama.jpg";
 const Portfolio = () => {
   return (
@@ -12,7 +12,7 @@ const Portfolio = () => {
           <div className="col-md-4 mb-4 d-flex">
             <div className="card-project text-center w-100">
               {/* Design image de telle façon cv pour width et height */}
-              <img src={maymaBlog} alt="MaymaBlog" />
+              <img src={mayma} alt="MaymaBlog" />
               <h3>MaymaBlog</h3>
               <p></p>
               <p>
