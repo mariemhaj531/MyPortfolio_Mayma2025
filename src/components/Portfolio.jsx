@@ -51,15 +51,9 @@ const Portfolio = () => {
     },
     {
       img: proj,
-      title: "Project Clone",
-      tech: "ReactJS, Laravel, MySQL, JQuery",
-      tools: "VSCode, GitHub, ESLint",
-    },
-    {
-      img: proj,
-      title: "Another Project",
-      tech: "ReactJS, Laravel, MySQL, JQuery",
-      tools: "VSCode, GitHub, ESLint",
+      title: "Drivey",
+      tech: "ReactJS, Laravel, MySQL",
+      tools: "VSCode, GitHub, ESLint,Postman",
     },
   ];
 
