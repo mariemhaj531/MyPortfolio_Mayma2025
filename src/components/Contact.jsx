@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="container py-5">
       {/* Titre principal */}
-      <h2 className="contact-title text-center mb-5">Contact <span>Me</span></h2>
+      <h2 className="contact-title text-center mb-5">Contact<span>Me</span></h2>
 
       <div className="row justify-content-center">
         <div className="col-lg-8 col-md-10">
