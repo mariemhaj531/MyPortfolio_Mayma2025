@@ -50,7 +50,7 @@ const Portfolio = () => {
       tools: "VSCode, Figma, Postman",
     },
     {
-      img: proj,
+      img: '',
       title: "Drivey",
       tech: "ReactJS, Laravel, MySQL",
       tools: "VSCode, GitHub, ESLint,Postman",
