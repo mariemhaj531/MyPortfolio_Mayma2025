@@ -9,6 +9,7 @@ Bienvenue dans mon projet **Portfolio Mayma**, une application moderne et respon
 
 - **Frontend** : [ReactJS]
 - **Backend** : [Laravel] – Gestion des soumissions du formulaire de contact
+- **Base de données**:  MySQL
 - **Expérience utilisateur (UI)** : jQuery (animations, interactions dynamiques)
 - **Styling** : Bootstrap
 
