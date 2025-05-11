@@ -1,50 +1,76 @@
-nav ul Link{
-  text-align: center;
-}
+/* Navbar styles */
 .navbar {
   background: linear-gradient(90deg, #0ca8e6, #0ca8e6);
   transition: background-color 0.3s ease-in-out;
-  position: fixed;
-  }
-  .navbar-brand {
-    color: white !important;
-    font-size: 1.8rem;
-    animation: fadeInDown 1s ease-in-out;
-  }
-  
-  .nav-link {
-    color: #fff !important;
-    position: relative;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    transition: 0.3s ease-in-out;
-  }
-  
-  .nav-link:hover::after {
+    padding: 1rem;
+    position: fixed;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 1.8rem;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item .nav-link {
+  color: white !important;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+/* Burger icon */
+.burger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger-bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    flex-direction: column;
+    align-items: start;
     width: 100%;
+    background-color: #0ca8e6;
   }
-  
-  .nav-link:hover {
-    color: #000 !important;
+
+  .navbar-nav.show {
+    max-height: 500px;
+    opacity: 1;
   }
-  
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+
+  .nav-item {
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 1rem;
   }
-  
+}
+
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row !important;
+    opacity: 1 !important;
+    max-height: none !important;
+  }
+}
