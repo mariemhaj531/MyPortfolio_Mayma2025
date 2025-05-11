@@ -2,9 +2,31 @@ import React from "react";
 import "../css/Contact.css";
 
 const Contact = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    const name = e.target[0].value;
+    const email = e.target[1].value;
+    const subject = e.target[2].value;
+    const message = e.target[3].value;
+  
+    try {
+      const res = await fetch('http://localhost:8000/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, subject, message })
+      });
+  
+      const data = await res.json();
+      alert(data.message);
+    // eslint-disable-next-line no-unused-vars
+    } catch (error) {
+      alert("Erreur lors de l'envoi");
+    }
+  };
+  
   return (
     <div className="container py-5">
-      {/* Titre principal */}
       <h2 className="contact-title text-center mb-5">Contact<span>Me</span></h2>
 
       <div className="row justify-content-center">
@@ -21,7 +43,7 @@ const Contact = () => {
             </div>
             <div className="right-container">
               <div className="right-inner-container">
-                <form action="#">
+                <form action="#" onSubmit={handleSubmit}>
                   <h2 className="lg-view">Get in touch</h2>
                   <h2 className="sm-view">Let's Chat</h2>
 

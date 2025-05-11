@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\Models\Contact;
 
 class ContactController extends Controller
 {
@@ -16,7 +17,8 @@ class ContactController extends Controller
             'message' => 'required|string',
         ]);
         $data = $request->only('name', 'email', 'subject', 'message');
-
+        // Save the message to the database
+        Contact::create($data);
         // Send email to the admin
         Mail::send('emails.contact', ['data' => $data], function ($message) use ($data) {
             $message->to(env('MAIL_FROM_ADDRESS'))
