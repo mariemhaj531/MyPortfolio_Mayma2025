@@ -19,9 +19,9 @@ const Contact = () => {
   
       const data = await res.json();
       alert(data.message);
-    // eslint-disable-next-line no-unused-vars
     } catch (error) {
-      alert("Erreur lors de l'envoi");
+      console.error("Erreur réseau :", error);
+      alert("Erreur lors de l'envoi : " + error.message);
     }
   };
   
