@@ -11,7 +11,7 @@ const Contact = () => {
     const message = e.target[3].value;
   
     try {
-      const res = await fetch('http://localhost:8000/api/contact', {
+      const res = await fetch('http://192.168.211.99:8000/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, subject, message })
