@@ -34,26 +34,26 @@ const Portfolio = () => {
     {
       img: mayma,
       title: "MaymaBlog",
-      tech: "ReactJS",
-      tools: "VSCode, GitHub, Figma, EmailJS",
+      tech:"ReactJS,MONGODB,Node.js",
+      tools:"VSCode,GitHub,Figma,EmailJS",
     },
     {
       img: proj,
       title: "MaymaPortfolio",
-      tech: "ReactJS,Laravel,MySQL,JQuery",
-      tools: "VSCode, GitHub, ESLint",
+      tech:"ReactJS,Laravel,MySQL,JQuery",
+      tools:"VSCode,GitHub,ESLint",
     },
     {
       img: mama,
       title: "Ma&Ma",
-      tech: "ReactJS, Node.js, MongoDB",
-      tools: "VSCode, Figma, Postman",
+      tech:"ReactJS,Node.js,MongoDB",
+      tools:"VSCode,Figma,Postman",
     },
     {
       img: '',
       title: "Drivey",
-      tech: "ReactJS, Laravel, MySQL",
-      tools: "VSCode, GitHub, ESLint,Postman",
+      tech:"ReactJS,Laravel,MySQL",
+      tools:"VSCode,GitHub,ESLint,Postman",
     },
   
   ];

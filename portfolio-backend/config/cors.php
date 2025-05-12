@@ -21,10 +21,12 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => 
-    [  'http://localhost:5173',
-    'https://mayma.vercel.app',
-    ],
+    // 'allowed_origins' => 
+    // ['http://localhost:5173',
+    // 'https://mayma.vercel.app',
+    // ],
+    'allowed_origins' => ['http://localhost:5173', 'http://192.168.211.99:5173'],
+
 
     'allowed_origins_patterns' => [],
 
