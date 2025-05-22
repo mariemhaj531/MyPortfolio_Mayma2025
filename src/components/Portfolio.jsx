@@ -55,6 +55,12 @@ const Portfolio = () => {
       tech:"ReactJS,MONGODB,Node.js",
       tools:"VSCode,GitHub,Figma,EmailJS",
     },
+      {
+      img: mayma,
+      title: "MaymaBlog",
+      tech:"ReactJS,MONGODB,Node.js",
+      tools:"VSCode,GitHub,Figma,EmailJS",
+    }
   ];
 
   return (
