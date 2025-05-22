@@ -6,7 +6,7 @@ import "../css/Portfolio.css";
 import proj from "../assets/proj.png";
 import mayma from "../assets/mayma.png";
 import mama from "../assets/mama.jpg";
-
+import healthCoaching from "../assets/healthCoaching.png";
 const Portfolio = () => {
   const settings = {
     // dots: true,
@@ -32,10 +32,16 @@ const Portfolio = () => {
 
   const projects = [
     {
-      img: mayma,
-      title: "MaymaBlog",
-      tech:"ReactJS,MONGODB,Node.js",
-      tools:"VSCode,GitHub,Figma,EmailJS",
+      img: mama,
+      title: "Ma&Ma",
+      tech:"ReactJS,Node.js,MongoDB",
+      tools:"VSCode,Figma,Postman",
+    },
+     {
+      img: healthCoaching,
+      title: "Health Coaching",
+      tech:"Hml,css,Bootstrap",
+      tools:"VSCode,GitHub,ESLint",
     },
     {
       img: proj,
@@ -43,19 +49,12 @@ const Portfolio = () => {
       tech:"ReactJS,Laravel,MySQL,JQuery",
       tools:"VSCode,GitHub,ESLint",
     },
-    {
-      img: mama,
-      title: "Ma&Ma",
-      tech:"ReactJS,Node.js,MongoDB",
-      tools:"VSCode,Figma,Postman",
-    },
-    {
-      img: '',
-      title: "Drivey",
-      tech:"ReactJS,Laravel,MySQL",
-      tools:"VSCode,GitHub,ESLint,Postman",
-    },
-  
+     {
+      img: mayma,
+      title: "MaymaBlog",
+      tech:"ReactJS,MONGODB,Node.js",
+      tools:"VSCode,GitHub,Figma,EmailJS",
+    }
   ];
 
   return (
