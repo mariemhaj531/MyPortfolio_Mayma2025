@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,6 +7,7 @@ import proj from "../assets/proj.png";
 import mayma from "../assets/mayma.png";
 import mama from "../assets/mama.jpg";
 import healthCoaching from "../assets/healthCoaching.png";
+
 const Portfolio = () => {
   const settings = {
     // dots: true,
