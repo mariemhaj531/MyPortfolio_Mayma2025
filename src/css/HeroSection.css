@@ -1,7 +1,7 @@
 .hero-section {
   color: black;
-  padding: 100px 0;
-  min-height: 100vh;
+  padding: 90px 0;
+  /* min-height: 100vh; */
   position: relative;
   overflow: hidden;
 }
