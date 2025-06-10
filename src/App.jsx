@@ -10,7 +10,7 @@ import Home from "./components/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
+// import Dashboard from "./components/Dashboard/Dashboard";
 import "./App.css";
 import NotFound from "./components/NotFound";
 function App() {
@@ -29,6 +29,7 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
+            {/* <Route path="/dashboard" element={<Dashboard />} /> */}
             <Route path="*" element={<NotFound />} />
           </Routes>
           <footer

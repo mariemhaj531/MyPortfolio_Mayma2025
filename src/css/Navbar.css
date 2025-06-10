@@ -74,3 +74,7 @@
     max-height: none !important;
   }
 }
+.language-selector .dropdown-menu {
+  min-width: 10px;
+  z-index: 100;
+}
