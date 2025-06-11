@@ -1,0 +1,15 @@
+{
+  "contact": "اتصال",
+  "skills": "المهارات",
+  "portfolio": "الأعمال",
+  "services": "الخدمات",
+  "about": "من نحن",
+  "home": "الرئيسية" ,
+  
+  "Hello, I'm": "مرحبًا، أنا",
+  "Web Developer":"مطورة ويب",
+  "I'm a passionate Web Developer with extensive experience in building full-stack applications using modern technologies.":
+    "أنا مطورة ويب شغوفة ولدي خبرة واسعة في بناء تطبيقات كاملة باستخدام أحدث التقنيات.",
+  "Download CV": "تحميل السيرة الذاتية",
+  "Contact Me": "اتصل بي"
+}

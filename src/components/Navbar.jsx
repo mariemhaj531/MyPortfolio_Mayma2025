@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import '../css/Navbar.css';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isLangMenuOpen, setLangMenuOpen] = useState(false);
-  const [selectedLang, setSelectedLang] = useState('en'); // 'en' par défaut
+  const { t, i18n } = useTranslation();
 
   const toggleMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
@@ -20,8 +21,7 @@ const Navbar = () => {
   };
 
   const selectLanguage = (lang) => {
-    setSelectedLang(lang);
-    console.log("Langue sélectionnée :", lang);
+    i18n.changeLanguage(lang);
     setLangMenuOpen(false);
   };
 
@@ -46,18 +46,17 @@ const Navbar = () => {
         </div>
 
         <ul className={`navbar-nav ${isMobileMenuOpen ? 'show' : ''} d-flex flex-column flex-md-row`}>
-          <li className="nav-item mx-2"><Link className="nav-link" to="/" onClick={closeMenu}>Home</Link></li>
-          <li className="nav-item mx-2"><Link className="nav-link" to="/about" onClick={closeMenu}>About</Link></li>
-          <li className="nav-item mx-2"><Link className="nav-link" to="/services" onClick={closeMenu}>Services</Link></li>
-          <li className="nav-item mx-2"><Link className="nav-link" to="/portfolio" onClick={closeMenu}>Portfolio</Link></li>
-          <li className="nav-item mx-2"><Link className="nav-link" to="/skills" onClick={closeMenu}>Skills</Link></li>
-          <li className="nav-item mx-2"><Link className="nav-link" to="/contact" onClick={closeMenu}>Contact</Link></li>
+          <li className="nav-item mx-2"><Link className="nav-link" to="/" onClick={closeMenu}>{t('home')}</Link></li>
+          <li className="nav-item mx-2"><Link className="nav-link" to="/about" onClick={closeMenu}>{t('about')}</Link></li>
+          <li className="nav-item mx-2"><Link className="nav-link" to="/services" onClick={closeMenu}>{t('services')}</Link></li>
+          <li className="nav-item mx-2"><Link className="nav-link" to="/portfolio" onClick={closeMenu}>{t('portfolio')}</Link></li>
+          <li className="nav-item mx-2"><Link className="nav-link" to="/skills" onClick={closeMenu}>{t('skills')}</Link></li>
+          <li className="nav-item mx-2"><Link className="nav-link" to="/contact" onClick={closeMenu}>{t('contact')}</Link></li>
         </ul>
 
-        {/* Language Selector */}
         <div className="lang-menu position-relative">
           <button className="btn btn-light" onClick={toggleLangMenu}>
-            🌐 {getFlag(selectedLang)}
+            🌐 {getFlag(i18n.language)}
           </button>
           {isLangMenuOpen && (
             <ul className="dropdown-menu show" style={{ position: 'absolute', top: '100%', right: 0 }}>
