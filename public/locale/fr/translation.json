@@ -1,0 +1,15 @@
+{
+  "home": "Accueil",
+  "about": "À propos",
+  "services": "Services",
+  "portfolio": "Portfolio",
+  "skills": "Compétences",
+  "contact": "Contact",
+  
+  "Hello, I'm": "Bonjour, je suis",
+  "Web Developer":"Développeuse Web",
+  "I'm a passionate Web Developer with extensive experience in building full-stack applications using modern technologies.":
+    "Je suis une développeuse web passionnée avec une grande expérience dans la création d'applications full-stack avec des technologies modernes.",
+  "Download CV": "Télécharger le CV",
+  "Contact Me": "Me contacter" 
+}

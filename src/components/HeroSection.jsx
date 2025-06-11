@@ -3,13 +3,14 @@ import $ from "jquery";
 import "../css/HeroSection.css";
 // import persoImg from '../assets/perso.jpg';
 import perso from '../assets/perso.png';
+import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
+ const { t } = useTranslation();
   useEffect(() => {
-    // Animer le h1 lettre par lettre
     const h1 = $(".banner-content h1");
-    const originalText = "Web Developer";
-    h1.text(""); // Vide d'abord
+    const originalText =t("Web Developer");
+    h1.text(""); 
     let index = 0;
   
     const interval = setInterval(() => {
@@ -17,7 +18,7 @@ const HeroSection = () => {
       index++;
   
       if (index >= originalText.length) {
-        clearInterval(interval); // Fin animation
+        clearInterval(interval); 
       }
     }, 100);
   
@@ -31,11 +32,10 @@ const HeroSection = () => {
       }
     );
   
-    // Nettoyage
     return () => {
       $(".banner-buttons a").off("mouseenter mouseleave");
     };
-  }, []);
+  }, [t]);
   return (
     <section id="home" className="hero-section">
       {/* <div id="particles-js"></div> */}
@@ -44,14 +44,16 @@ const HeroSection = () => {
           <div className="col-lg-6 col-md-12">
             <div className="banner-content">
               <h3>
-                Hello, I'm <span className="highlight">Mariem Hajji</span>
+                {t("Hello, I'm")} <span className="highlight">Mariem Hajji</span>
               </h3>
               <h1>
-                <b className="fw-bold ">Web Developer</b>
+                <b className="fw-bold ">
+               
+              {t("Web Developer")}
+               </b>
               </h1>
               <p>
-                I'm a passionate Web Developer with extensive experience in
-                building full-stack applications using modern technologies.
+                {t("I'm a passionate Web Developer with extensive experience in building full-stack applications using modern technologies.")}
               </p>
               <div className="banner-socials mb-3">
                 <a
@@ -78,10 +80,10 @@ const HeroSection = () => {
               </div>
               <div className="banner-buttons">
                 <a  href="/Mariem.pdf" className="btn custom-btn">
-                  Download CV
+                   {t("Download CV")}
                 </a>
                 <a href="/contact" className="btn custom-btn">
-                Contact Me
+                  {t("Contact Me")}
                 </a>
               </div>
             </div>
