@@ -11,6 +11,33 @@
   "I'm a passionate Web Developer with extensive experience in building full-stack applications using modern technologies.":
       "I'm a passionate Web Developer with extensive experience in building full-stack applications using modern technologies.",
   "Download CV": "Download CV",
-  "Contact Me": "Contact Me"
-}
+  "Contact Me": "Contact Me",
+
+  "About": "About",
+   "Me": "Me",
+   "I'm a": "I'm a",
+   "I'm a passionate and creative Full-Stack Web Developer with a strong background in JavaScript, React, Node.js, and PHP.":
+   "I'm a passionate and creative Full-Stack Web Developer with a strong background in JavaScript, React, Node.js, and PHP.",
+   "I enjoy building clean, responsive, and user-friendly applications.With a deep interest in problem-solving and continuous learning, I strive to deliver efficient and scalable web solutions.":
+   "I enjoy building clean, responsive, and user-friendly applications.With a deep interest in problem-solving and continuous learning, I strive to deliver efficient and scalable web solutions.",
+   "I also love working in teams, sharing knowledge, and learning from others.I've participated in multiple collaborative projects where we built modern web apps using best practices.":
+   "I also love working in teams, sharing knowledge, and learning from others.I've participated in multiple collaborative projects where we built modern web apps using best practices.",
+   "In addition to my coding skills, I'm very organized, adaptable, and curious — always eager to explore new technologies and tools in the world of software development.":
+   "In addition to my coding skills, I'm very organized, adaptable, and curious — always eager to explore new technologies and tools in the world of software development.",
+   "Read More": "Read More",
+   "Show Less": "Show Less",
+
+  "My": "My",
+  "Services": "Services",
+  "Web Development": "Web Development",
+  "Building responsive and modern websites.": "Building responsive and modern websites.",
+  "Web Design": "Web Design",
+  "Crafting clean and user-friendly interfaces.": "Crafting clean and user-friendly interfaces.",
+  "Artificial Intelligence (AI)": "Artificial Intelligence (AI)",
+  "Integrating intelligent solutions using AI.": "Integrating intelligent solutions using AI.",
+
+  "My Projects": "My Projects",
+  "Technologies": "Technologies",
+  "Tools":"Tools"
+  }
 

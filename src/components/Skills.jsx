@@ -65,7 +65,7 @@ const Skills = () => {
       ],
     },
     {
-      category: "Base de données",
+      category: "Database",
       items: [
         { name: "MongoDB", icon: <SiMongodb /> },
         { name: "MySQL", icon: <SiMysql /> },

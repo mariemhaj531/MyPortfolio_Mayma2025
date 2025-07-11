@@ -4,12 +4,40 @@
   "portfolio": "الأعمال",
   "services": "الخدمات",
   "about": "من نحن",
-  "home": "الرئيسية" ,
-  
+  "home": "الرئيسية",
+
   "Hello, I'm": "مرحبًا، أنا",
-  "Web Developer":"مطورة ويب",
+  "Mariem Hajji": "مريم الحاجي",
+  "Web Developer": "مطورة ويب",
   "I'm a passionate Web Developer with extensive experience in building full-stack applications using modern technologies.":
     "أنا مطورة ويب شغوفة ولدي خبرة واسعة في بناء تطبيقات كاملة باستخدام أحدث التقنيات.",
   "Download CV": "تحميل السيرة الذاتية",
-  "Contact Me": "اتصل بي"
+  "Contact Me": "اتصل بي",
+
+  "About": "حول",
+  "Me": "أنا",
+  "I'm a": "أنا",
+  "I'm a passionate and creative Full-Stack Web Developer with a strong background in JavaScript, React, Python, and PHP.":
+    "أنا مطورة ويب شغوفة ومبدعة، لدي خلفية قوية في JavaScript وReact وPython وPHP.",
+  "I enjoy building clean, responsive, and user-friendly applications.With a deep interest in problem-solving and continuous learning, I strive to deliver efficient and scalable web solutions.":
+    "أستمتع ببناء تطبيقات نظيفة، متجاوبة، وسهلة الاستخدام. لدي اهتمام عميق بحل المشكلات والتعلم المستمر، وأسعى لتقديم حلول ويب فعالة وقابلة للتطوير.",
+  "I also love working in teams, sharing knowledge, and learning from others.I've participated in multiple collaborative projects where we built modern web apps using best practices.":
+    "أحب أيضًا العمل ضمن فرق، ومشاركة المعرفة، والتعلم من الآخرين. لقد شاركت في العديد من المشاريع التعاونية حيث أنشأنا تطبيقات ويب حديثة باستخدام أفضل الممارسات.",
+  "In addition to my coding skills, I'm very organized, adaptable, and curious — always eager to explore new technologies and tools in the world of software development.":
+    "بالإضافة إلى مهاراتي في البرمجة، أنا منظمة جدًا، مرنة، وفضولية — دائمًا ما أسعى لاكتشاف تقنيات وأدوات جديدة في عالم تطوير البرمجيات.",
+  "Read More": "اقرأ المزيد",
+  "Show Less": "....",
+   
+  "My":".",
+  "Services":"خدماتي",
+  "Web Development":"تطوير الويب",
+  "Building responsive and modern websites.":".بناء مواقع ويب متجاوبة وحديثة",
+  "Web Design":"تصميم الويب",
+  "Crafting clean and user-friendly interfaces.":"تصميم واجهات نظيفة وسهلة الاستخدام",
+  "Artificial Intelligence (AI)":"الذكاء الاصطناعي",
+  "Integrating intelligent solutions using AI.":".دمج حلول ذكية باستخدام الذكاءالاصطناعي",
+
+  "My Projects": "مشاريعي",
+  "Technologies": "التقنيات",
+  "Tools":"ادوات"
 }
