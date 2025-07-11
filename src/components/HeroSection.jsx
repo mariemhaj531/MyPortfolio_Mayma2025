@@ -44,7 +44,7 @@ const HeroSection = () => {
           <div className="col-lg-6 col-md-12">
             <div className="banner-content">
               <h3>
-                {t("Hello, I'm")} <span className="highlight">Mariem Hajji</span>
+                {t("Hello, I'm")} <span className="highlight">{t("Mariem Hajji")}</span>
               </h3>
               <h1>
                 <b className="fw-bold ">

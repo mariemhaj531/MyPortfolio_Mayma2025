@@ -11,5 +11,33 @@
   "I'm a passionate Web Developer with extensive experience in building full-stack applications using modern technologies.":
     "Je suis une développeuse web passionnée avec une grande expérience dans la création d'applications full-stack avec des technologies modernes.",
   "Download CV": "Télécharger le CV",
-  "Contact Me": "Me contacter" 
+  "Contact Me": "Me contacter",
+  
+   "About": "A propos",
+   "Me": "de moi",
+   "I'm a": "Je suis",
+   "I'm a passionate and creative Full-Stack Web Developer with a strong background in JavaScript, React, Python, and PHP.":
+   "Je suis une développeuse web Full-Stack passionné et créatif, avec une solide expérience en JavaScript, React, Python et PHP",
+   "I enjoy building clean, responsive, and user-friendly applications.With a deep interest in problem-solving and continuous learning, I strive to deliver efficient and scalable web solutions.":
+   "J'aime créer des applications propres, réactives et conviviales. Animée par un fort intérêt pour la résolution de problèmes et l'apprentissage continu, je m'efforce de fournir des solutions web efficaces et évolutives.",
+   "I also love working in teams, sharing knowledge, and learning from others.I've participated in multiple collaborative projects where we built modern web apps using best practices.":
+   "J'aime également travailler en équipe, partager mes connaissances et apprendre des autres. J'ai participé à plusieurs projets collaboratifs où nous avons développé des applications web modernes en suivant les meilleures pratiques.",
+   "In addition to my coding skills, I'm very organized, adaptable, and curious — always eager to explore new technologies and tools in the world of software development.":
+   "En plus de mes compétences en programmation, je suis très organisée, adaptable et curieuse — toujours enthousiaste à l'idée de découvrir de nouvelles technologies et outils dans le domaine du développement logiciel",
+   "Read More": "Lire la suite",
+   "Show Less": "Réduire",
+
+   "My":"Mes",
+   "Services": "Services",
+   "Web Development": "Développement Web",
+   "Building responsive and modern websites.":"Création de sites web modernes et réactifs",
+   "Web Design": "Design Web",
+   "Crafting clean and user-friendly interfaces.":"Création d'interfaces propres et conviviales",
+   "Artificial Intelligence (AI)":"Intelligence Artificielle (IA)",
+   "Integrating intelligent solutions using AI.":"Intégration de solutions intelligentes utilisant l'IA",
+
+   "My Projects": "Mes Projets",
+   "Technologies": "Technologies",
+   "Tools":"Outils"
+
 }

@@ -1,9 +1,8 @@
-/* Navbar styles */
 .navbar {
   background: linear-gradient(90deg, #0ca8e6, #0ca8e6);
   transition: background-color 0.3s ease-in-out;
-    padding: 1rem;
-    position: fixed;
+  padding: 1rem;
+  position: fixed;
 }
 
 .navbar-brand {
@@ -50,7 +49,6 @@
     width: 100%;
     background-color: #0ca8e6;
   }
-
   .navbar-nav.show {
     max-height: 500px;
     opacity: 1;
@@ -62,19 +60,18 @@
     padding: 0.5rem 1rem;
   }
 }
-
 @media (min-width: 768px) {
   .burger {
     display: none;
   }
-
   .navbar-nav {
     flex-direction: row !important;
     opacity: 1 !important;
     max-height: none !important;
   }
 }
+
 .language-selector .dropdown-menu {
   min-width: 10px;
-  z-index: 100;
+  z-index: 100;  
 }

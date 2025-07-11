@@ -7,8 +7,12 @@ import proj from "../assets/proj.png";
 import mayma from "../assets/mayma.png";
 import mama from "../assets/mama.jpg";
 import healthCoaching from "../assets/healthCoaching.png";
+import { useTranslation } from 'react-i18next';
+
 
 const Portfolio = () => {
+    const { t } = useTranslation();
+
   const settings = {
     // dots: true,
     infinite: true,
@@ -61,15 +65,15 @@ const Portfolio = () => {
   return (
     <div className="portfolio">
       <section className="container mt-5">
-        <h1 className="text-center">My Projects</h1>
+        <h1 className="text-center">{t("My Projects")}</h1>
         <Slider  {...settings} className="mt-4">
           {projects.map((project, index) => (
             <div className="card-project text-center" key={index}>
               <img src={project.img} alt={project.title} className="project-img" />
               <h3>{project.title}</h3>
               <div className="tech-tools">
-              <p><strong>Technologies:</strong> <span class="spaced">{project.tech}</span></p>
-              <p><strong>Tools:</strong> <span class="space">{project.tools}</span></p>
+              <p><strong>{t("Technologies:")}</strong> <span class="spaced">{project.tech}</span></p>
+              <p><strong>{t("Tools:")}</strong> <span class="space">{project.tools}</span></p>
               </div>
             </div>
           ))}
