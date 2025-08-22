@@ -1,4 +1,3 @@
- import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,12 +6,10 @@ import proj from "../assets/proj.png";
 import mayma from "../assets/mayma.png";
 import mama from "../assets/mama.jpg";
 import healthCoaching from "../assets/healthCoaching.png";
+import drive from "../assets/drive.png";
 import { useTranslation } from 'react-i18next';
-
-
 const Portfolio = () => {
-    const { t } = useTranslation();
-
+  const { t } = useTranslation();
   const settings = {
     // dots: true,
     infinite: true,
@@ -34,7 +31,6 @@ const Portfolio = () => {
        },
      ],
    };
-
   const projects = [
     {
       img: mama,
@@ -45,7 +41,7 @@ const Portfolio = () => {
      {
       img: healthCoaching,
       title: "Health Coaching",
-      tech:"Hml,css,Bootstrap",
+      tech:"Html,css,Bootstrap",
       tools:"VSCode,GitHub,ESLint",
     },
     {
@@ -58,10 +54,15 @@ const Portfolio = () => {
       img: mayma,
       title: "MaymaBlog",
       tech:"ReactJS,MONGODB,Node.js",
-      tools:"VSCode,GitHub,Figma,EmailJS",
+      tools:" VSCode,GitHub,Figma,EmailJS",
     },
+    {
+      img: drive,
+      title: "DriveEasy",
+      tech:"ReactJS,MYSQL,Laravel",
+      tools:" VSCode,GitHub,Figma,Postman",
+    }
   ];
-
   return (
     <div className="portfolio">
       <section className="container mt-5">
@@ -72,8 +73,10 @@ const Portfolio = () => {
               <img src={project.img} alt={project.title} className="project-img" />
               <h3>{project.title}</h3>
               <div className="tech-tools">
-              <p><strong>{t("Technologies:")}</strong> <span class="spaced">{project.tech}</span></p>
-              <p><strong>{t("Tools:")}</strong> <span class="space">{project.tools}</span></p>
+               {/* <strong><p>{t("technologies")}<span class="spaced">{project.tech}</span></p></strong>
+               <strong><p>{t("tools")}</p> <span class="space">{project.tools}</span></strong> */}
+              <p><strong>{t("technologies")}</strong> <span class="spaced">{project.tech}</span></p>
+              <p><strong>{t("tools")}</strong> <span class="space">{project.tools}</span></p>
               </div>
             </div>
           ))}

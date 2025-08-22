@@ -87,8 +87,9 @@
   display: inline-block;
   text-indent: -12px;
   font-size: 16px;
+  margin-left:5px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .space{
-  margin-left:-70px;
+  margin-left:-60px;
 }
