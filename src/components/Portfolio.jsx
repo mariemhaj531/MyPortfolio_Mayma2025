@@ -75,8 +75,8 @@ const Portfolio = () => {
               <div className="tech-tools">
                {/* <strong><p>{t("technologies")}<span class="spaced">{project.tech}</span></p></strong>
                <strong><p>{t("tools")}</p> <span class="space">{project.tools}</span></strong> */}
-              <p><strong>{t("technologies")}</strong> <span class="spaced">{project.tech}</span></p>
-              <p><strong>{t("tools")}</strong> <span class="space">{project.tools}</span></p>
+              <p><strong>{t("technologies:")}</strong> <span class="spaced">{project.tech}</span></p>
+              <p><strong>{t("tools:")}</strong> <span class="space">{project.tools}</span></p>
               </div>
             </div>
           ))}
