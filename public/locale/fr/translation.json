@@ -37,7 +37,17 @@
    "Integrating intelligent solutions using AI.":"Intégration de solutions intelligentes utilisant l'IA",
 
    "My Projects": "Mes Projets",
-   "Technologies": "Technologies",
-   "Tools":"Outils"
+    "technologies:": "Technologies :",
+   "tools:": "Outils :",
 
+   "Skills": "Compétences",
+   "Here is an overview of my technical and professional skills":"Voici un aperçu de mes compétences techniques et professionnelles"
+
+
+
+
+
+
+
+"
 }

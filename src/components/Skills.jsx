@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../css/Skills.css";
+import { useTranslation } from 'react-i18next';
 
 // Import des icônes
 import {
@@ -28,6 +29,9 @@ import {
 import { VscVscode } from "react-icons/vsc";
 
 const Skills = () => {
+    const { t } = useTranslation();
+
+  // Initialisation de AOS pour les animations
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -75,9 +79,9 @@ const Skills = () => {
 
   return (
     <div className="skills-section">
-      <h2 className="skills-title">Skills</h2>
+      <h2 className="skills-title">{t("Skills")}</h2>
       {/* <p className="skills-subtitle">Voici un aperçu de mes compétences techniques et professionnelles </p> */}
-      <p className="skills-subtitle"> Here is an overview of my technical and professional skills</p>
+      <p className="skills-subtitle"> {t("Here is an overview of my technical and professional skills")}</p>
       <div className="skills-grid">
         {skillsData.map((module, index) => (
           <div className="skills-card" key={index} data-aos="fade-up">

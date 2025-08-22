@@ -36,8 +36,10 @@
   "Artificial Intelligence (AI)": "Artificial Intelligence (AI)",
   "Integrating intelligent solutions using AI.": "Integrating intelligent solutions using AI.",
 
-  "My Projects": "My Projects",
-  "Technologies": "Technologies",
-  "Tools":"Tools"
+   "My Projects": "My Projects",
+   "Technologies:": "Technologies:",
+   "Tools:": "Tools:",
+   "Skills":"Skills",
+   "Here is an overview of my technical and professional skills":"Here is an overview of my technical and professional skills"
   }
 
